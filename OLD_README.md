@@ -1,5 +1,31 @@
 # ST-GCN
 
+## ml 配环境
+```
+conda create -n stgcn python=3.5 -y
+source activate stgcn
+
+conda install pytorch==1.2.0 torchvision==0.4.0 cudatoolkit=9.2 -c pytorch
+
+pip install -r requirements.txt
+
+cd torchlight
+python setup.py install
+cd ..
+
+```
+测试模型
+```
+
+python main.py recognition -c config/st_gcn/kinetics-skeleton/test.yaml  
+
+```
+
+
+### 配置openopse
+
+### 安装 
+
 ## Introduction
 This repository holds the codebase, dataset and models for the paper:
 
